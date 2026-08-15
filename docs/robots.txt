@@ -1,0 +1,5 @@
+# Crawling is allowed for the public static site.
+User-agent: *
+Disallow:
+
+Sitemap: https://contexto.com.pl/sitemap.xml
