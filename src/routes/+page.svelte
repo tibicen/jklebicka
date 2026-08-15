@@ -3,19 +3,19 @@
 
 	const services = [
 		{
-			title: 'Tłumaczenia ustne',
-			text: 'Konferencje, spotkania zarządów, negocjacje, wizyty techniczne i wydarzenia międzynarodowe.',
+			title: 'Tłumaczenia konferencyjne i ustne',
+			text: 'Wsparcie językowe podczas konferencji, spotkań zarządów, negocjacji, wizyt technicznych i wydarzeń międzynarodowych.',
 			items: [
-				'symultaniczne i konsekutywne',
-				'szeptane i liaison',
-				'konferencje, szkolenia i misje gospodarcze'
+				'symultaniczne, konsekutywne, szeptane i liaison',
+				'konferencje, szkolenia, seminaria i misje gospodarcze',
+				'przygotowanie terminologii i praca z mówcami'
 			]
 		},
 		{
-			title: 'Tłumaczenia pisemne',
-			text: 'Dokumentacja, która musi być precyzyjna, spójna i gotowa do użycia w realnym procesie.',
+			title: 'Tłumaczenia pisemne i techniczne',
+			text: 'Dokumentacja, która musi być precyzyjna, spójna i gotowa do użycia w realnym procesie biznesowym lub produkcyjnym.',
 			items: [
-				'techniczna, produkcyjna i BHP',
+				'dokumentacja techniczna, produkcyjna i BHP',
 				'umowy, oferty i komunikacja biznesowa',
 				'instrukcje, procedury i dokumentacja projektowa'
 			]
@@ -52,18 +52,81 @@
 </script>
 
 <svelte:head>
-	<title>Contexto — Joanna Kłębicka | Tłumaczenia konferencyjne i pisemne</title>
+	<title>Tłumaczenia konferencyjne i pisemne | Contexto — Joanna Kłębicka</title>
 	<meta
 		name="description"
-		content="Joanna Kłębicka — profesjonalne tłumaczenia konferencyjne i pisemne w językach polskim, angielskim i hiszpańskim. Dla wydarzeń, projektów i procesów, w których komunikacja ma znaczenie."
+		content="Joanna Kłębicka — tłumaczenia konferencyjne, ustne i pisemne w językach polskim, angielskim i hiszpańskim. Precyzyjne wsparcie dla wydarzeń, firm i projektów międzynarodowych."
 	/>
-	<meta property="og:title" content="Contexto — Joanna Kłębicka" />
+	<link rel="canonical" href="https://contexto.com.pl/" />
+	<meta property="og:title" content="Tłumaczenia konferencyjne i pisemne | Contexto" />
 	<meta
 		property="og:description"
-		content="Język, terminologia i kontekst — profesjonalne tłumaczenia ustne i pisemne."
+		content="Język, terminologia i kontekst — profesjonalne tłumaczenia ustne i pisemne Joanny Kłębickiej."
 	/>
 	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://contexto.com.pl/" />
 	<meta property="og:locale" content="pl_PL" />
+	<meta property="og:site_name" content="Contexto — Joanna Kłębicka" />
+	<meta property="og:image" content="https://contexto.com.pl/images/meetingpoint-messiaen.jpg" />
+	<meta property="og:image:alt" content="Tłumaczenia konferencyjne Contexto podczas wydarzenia" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="450" />
+	<meta name="author" content="Joanna Kłębicka" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Tłumaczenia konferencyjne i pisemne | Contexto" />
+	<meta
+		name="twitter:description"
+		content="Profesjonalne tłumaczenia ustne i pisemne PL / EN / ES dla wydarzeń, firm i projektów międzynarodowych."
+	/>
+	<meta name="twitter:image" content="https://contexto.com.pl/images/meetingpoint-messiaen.jpg" />
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "Person",
+					"@id": "https://contexto.com.pl/#joanna-klebicka",
+					"name": "Joanna Kłębicka",
+					"url": "https://contexto.com.pl/",
+					"jobTitle": "Tłumaczka konferencyjna i pisemna",
+					"knowsLanguage": ["pl", "en", "es"],
+					"affiliation": { "@type": "Organization", "name": "Uniwersytet Jagielloński" },
+					"memberOf": {
+						"@type": "Organization",
+						"name": "Polskie Stowarzyszenie Tłumaczy Konferencyjnych"
+					},
+					"sameAs": [
+						"https://www.linkedin.com/in/joannaklebicka/",
+						"https://www.proz.com/interpreter/645130",
+						"https://pstk.org.pl/tlumacz/joanna-klebicka/"
+					]
+				},
+				{
+					"@type": "Organization",
+					"@id": "https://contexto.com.pl/#organization",
+					"name": "Contexto",
+					"url": "https://contexto.com.pl/",
+					"logo": "https://contexto.com.pl/images/logo.png",
+					"founder": { "@id": "https://contexto.com.pl/#joanna-klebicka" },
+					"contactPoint": {
+						"@type": "ContactPoint",
+						"contactType": "customer service",
+						"telephone": "+48 660 443 471",
+						"email": "joanna.klebicka@contexto.com.pl",
+						"availableLanguage": ["Polish", "English", "Spanish"]
+					}
+				},
+				{
+					"@type": "WebSite",
+					"@id": "https://contexto.com.pl/#website",
+					"url": "https://contexto.com.pl/",
+					"name": "Contexto — Joanna Kłębicka",
+					"inLanguage": "pl-PL",
+					"publisher": { "@id": "https://contexto.com.pl/#organization" }
+				}
+			]
+		}
+	</script>
 </svelte:head>
 
 <header class="site-header">
@@ -99,11 +162,11 @@
 <main id="top">
 	<section class="hero page-shell" aria-labelledby="hero-title">
 		<div class="hero-copy">
-			<p class="eyebrow">Tłumaczenia · PL / EN / ES</p>
-			<h1 id="hero-title">Język, terminologia, <span>kontekst.</span></h1>
+			<p class="eyebrow">Tłumaczenia konferencyjne · PL / EN / ES</p>
+			<h1 id="hero-title">Tłumaczenia, które rozumieją <span>kontekst.</span></h1>
 			<p class="hero-lede">
-				Tłumaczenia konferencyjne i pisemne dla sytuacji, w których komunikacja ma znaczenie dla
-				wyniku.
+				Profesjonalne tłumaczenia konferencyjne, ustne i pisemne dla firm, wydarzeń i projektów
+				międzynarodowych.
 			</p>
 			<a class="action action-primary" href="#kontakt"
 				>Zapytaj o wycenę <span aria-hidden="true">↗</span></a
@@ -142,8 +205,8 @@
 				kontekst, który pozwala drugiej stronie naprawdę uczestniczyć.
 			</p>
 			<p class="small-copy">
-				Pracuję w Polsce i za granicą — podczas konferencji, spotkań, delegacji i projektów
-				wymagających przygotowania.
+				Pracuję w językach polskim, angielskim i hiszpańskim — podczas konferencji, spotkań,
+				delegacji oraz projektów technicznych i biznesowych wymagających przygotowania.
 			</p>
 		</div>
 	</section>
@@ -176,7 +239,12 @@
 		<div class="language-band-inner page-shell">
 			<div>
 				<p class="eyebrow eyebrow-light">Kombinacje językowe</p>
-				<h2 id="language-title">PL ↔ EN<br />PL ↔ ES<br />EN ↔ ES</h2>
+				<h2 id="language-title">
+					<img
+						src="/images/PL-EN-ES.svg"
+						alt="Kombinacje językowe: polski, angielski i hiszpański"
+					/>
+				</h2>
 			</div>
 			<p class="language-band-copy">
 				Bez języka pośredniego tam, gdzie projekt wymaga bezpośredniej pracy angielsko–hiszpańskiej.
@@ -798,10 +866,10 @@
 
 	.language-band-inner {
 		display: grid;
-		grid-template-columns: minmax(0, 1fr) minmax(0, 0.72fr);
-		align-items: end;
-		gap: var(--space-3xl);
-		padding-block: var(--space-4xl);
+		grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
+		align-items: center;
+		gap: clamp(var(--space-xl), 7vw, var(--space-4xl));
+		padding-block: clamp(var(--space-2xl), 5vw, var(--space-3xl));
 	}
 
 	.eyebrow-light {
@@ -810,13 +878,19 @@
 
 	.language-band h2 {
 		margin: 0;
-		font-size: clamp(var(--text-3xl), 8vw, 7rem);
-		line-height: 0.9;
+		line-height: 0;
+	}
+
+	.language-band h2 img {
+		display: block;
+		width: min(100%, 20rem);
+		height: auto;
+		filter: brightness(0) invert(1);
 	}
 
 	.language-band-copy {
-		max-width: 34ch;
-		margin: 0 0 var(--space-xs);
+		max-width: 38ch;
+		margin: 0;
 		color: var(--color-paper-2);
 		font-family: var(--font-display);
 		font-size: var(--text-lg);
@@ -1111,14 +1185,10 @@
 			max-width: 44rem;
 			padding-inline-end: var(--space-md);
 		}
-
-		.intro-copy {
-			padding-block-start: 0;
-		}
-
 		.language-band-inner {
-			grid-template-columns: 1fr;
-			gap: var(--space-xl);
+			grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.72fr);
+			align-items: center;
+			gap: var(--space-2xl);
 		}
 
 		.about-image-wrap {
@@ -1245,8 +1315,8 @@
 			padding-block: var(--space-3xl);
 		}
 
-		.language-band h2 {
-			font-size: clamp(var(--text-3xl), 18vw, 5rem);
+		.language-band h2 img {
+			width: min(100%, 15rem);
 		}
 
 		.work-row,
