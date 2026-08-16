@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	let menuOpen = $state(false);
 
 	const services = [
@@ -27,21 +29,21 @@
 			number: '01',
 			title: 'Gala KGHM Metraco',
 			detail: 'Tłumaczenie konsekutywne · EN / PL · Legnica',
-			image: '/images/kghm-metraco-gala.jpg',
+			image: `${base}/images/kghm-metraco-gala.jpg`,
 			alt: 'Sala podczas gali KGHM Metraco'
 		},
 		{
 			number: '02',
 			title: '150 lat BASF',
 			detail: 'Tłumaczenie symultaniczne · EN / PL · Wrocław',
-			image: '/images/basf-anniversary.jpg',
+			image: `${base}/images/basf-anniversary.jpg`,
 			alt: 'Uczestnicy wydarzenia jubileuszowego BASF'
 		},
 		{
 			number: '03',
 			title: 'Google Think',
 			detail: 'Konferencja · EN / PL · Warszawa',
-			image: '/images/google-think.jpg',
+			image: `${base}/images/google-think.jpg`,
 			alt: 'Scena konferencji Google Think'
 		}
 	];
@@ -176,8 +178,8 @@
 		<div class="hero-proof">
 			<figure class="hero-image">
 				<img
-					src="/images/meetingpoint-messiaen.jpg"
-					srcset="/images/meetingpoint-messiaen.jpg 800w"
+						src={`${base}/images/meetingpoint-messiaen.jpg`}
+						srcset={`${base}/images/meetingpoint-messiaen.jpg 800w`}
 					sizes="(min-width: 60rem) 45vw, 100vw"
 					width="800"
 					height="450"
@@ -241,7 +243,7 @@
 				<p class="eyebrow eyebrow-light">Kombinacje językowe</p>
 				<h2 id="language-title">
 					<img
-						src="/images/PL-EN-ES.svg"
+							src={`${base}/images/PL-EN-ES.svg`}
 						alt="Kombinacje językowe: polski, angielski i hiszpański"
 					/>
 				</h2>
@@ -289,8 +291,8 @@
 		<div class="about-image-wrap">
 			<figure class="about-image">
 				<img
-					src="/images/contact.jpg"
-					srcset="/images/contact.jpg 400w"
+							src={`${base}/images/contact.jpg`}
+							srcset={`${base}/images/contact.jpg 400w`}
 					sizes="(min-width: 60rem) 32vw, 100vw"
 					width="400"
 					height="300"
